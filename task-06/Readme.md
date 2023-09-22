@@ -1,0 +1,1 @@
+i believe that i have completed the task, but as of now i havent figured out how to verify my discord acoount to get thr bot token. (im  not sure if ill be able to use my lap again till 25th) everthing waas new to me, the discord bot and website scraping, and im grateful that its added to my set of skills
