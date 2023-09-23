@@ -1,12 +1,12 @@
-#amfoss tasks
+# amfoss tasks
 
-#SELF INTRO
+# SELF INTRO
 I am Koshy Prasanth, S1 ECE student at Amrita Vishwa Vidyapeetham.I had taken Biology and math in 12th, hence
 i started coding just before one month, right after the onam holidays, when i decided to apply into amFOSS. 
 Ive taken online classes and read many documentations of many languages, mainly python, and I find coding really 
 interesting. I was always a lover of logical reasoning, critical thinking and problem solving skills. 
 
-#INTROSPECTION
+# INTROSPECTION
 
 Im really excited about learning from experienced software developers, my seniors. After joining the amFOSS club, 
 my primary goal is to absorb as much knowledge as possible and be immersed in a community of individuals who share 
