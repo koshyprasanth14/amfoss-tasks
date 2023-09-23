@@ -1,6 +1,8 @@
 # amfoss tasks
 
 # SELF INTRO
+
+
 I am Koshy Prasanth, S1 ECE student at Amrita Vishwa Vidyapeetham.I had taken Biology and math in 12th, hence
 i started coding just before one month, right after the onam holidays, when i decided to apply into amFOSS. 
 Ive taken online classes and read many documentations of many languages, mainly python, and I find coding really 
