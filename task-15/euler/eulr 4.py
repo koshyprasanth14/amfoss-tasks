@@ -1,21 +1,16 @@
-def palindrome(input_number):
-    z = []
-    for i in range(1000, 99, -1):
-        for j in range (1000, 99, -1):
-            num = i * j 
-            if str(num) == str(num)[ ::-1]:
-                if num <= input_number:
-                    z.append(num)
-                    
-                    
-
-    if z:
-        print(max(z))
-    else:
-        print(0)
-
-
 t = int(input())
-for fgh in range (t):
-    input_number = int(input())
-    palindrome(input_number)
+for sdug in range (t):
+    n = int(input())
+    z = []
+    for i in range (n-1, 101101 -1, -1):
+        if str(i) == str(i)[::-1]:
+            for j in range(100,1000):
+                if i%j==0:
+                    k = i//j
+                    if k <= 999:
+                        z.append(i)
+                        break
+
+        if len(z) == 1:
+            break
+    print(max(z))
