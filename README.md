@@ -35,8 +35,8 @@ to participate in the foss-bios night.
 | Task-08    | Poke-Search!               | Unattempted    |
 | Task-09    | GeoQuest                   | Unattempted    |
 | Task-10    | RuskOS                     | Unattempted    |
-|[Task-11](./task-11)   | TinkerCAD                  |
-| Task-12    | Godot                      |
-| Task-13    | Vim                        |
-|[Task-14](./task-14)   | Bandit                     |
-|[Task-15](./task-15)   | Project Euler              |
+|[Task-11](./task-11)   | TinkerCAD                  | 
+| Task-12    | Godot                      | Unattempted    |
+| Task-13    | Vim                        | Unattempted    |
+|[Task-14](./task-14)   | Bandit                     | Completed      | 
+|[Task-15](./task-15)   | Project Euler              | Completed      | 
