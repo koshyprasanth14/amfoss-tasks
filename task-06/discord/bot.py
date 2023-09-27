@@ -29,6 +29,7 @@ async def livescore(ctx):
 
         if scraped_data:
             await ctx.send(f'Title: {scraped_data}')
+            live_scores.append(scraped_data)
         else:
             await ctx.send('data not found')
 
