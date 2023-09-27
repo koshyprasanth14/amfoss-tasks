@@ -12,28 +12,28 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='/', intents=intents)
 live_scores = []
 
-@bot.command()
+@bot.command() 
 async def livescore(ctx):
     try:
         url = 'https://www.espncricinfo.com/live-cricket-score'  
         class_name1 = 'ds-text-tight-m ds-font-bold ds-capitalize ds-truncate'
         class_name2 = 'ds-text-tight-m ds-font-bold ds-capitalize ds-truncate !ds-text-typo-mid3'
 
-        # over1 = "ds-text-compact-s ds-text-typo ds-text-right ds-whitespace-nowrap"
-        # over2 = "ds-text-compact-s ds-text-typo ds-text-right ds-whitespace-nowrap"
+        over1 = "ds-text-compact-s ds-text-typo ds-text-right ds-whitespace-nowrap"
+        over2 = "ds-text-compact-s ds-text-typo ds-text-right ds-whitespace-nowrap"
 
         det = "ds-text-tight-s ds-font-regular ds-truncate ds-text-typo"
 
         print('executing livescore')
-        scraped_data = scraper.scrape_specific_division(url, class_name1, class_name2, det) #over1, over2, 
+        scraped_data = scraper.scrape_specific_division(url, class_name1, class_name2, det, over1, over2)
 
         if scraped_data:
             await ctx.send(f'Title: {scraped_data}')
-        # else:
-        #     await ctx.send('WHY YOU LOOKING CRICKET SCORE GO STUDY')
+        else:
+            await ctx.send('data not found')
 
     except ValueError:
-        await ctx.send('Usage: /fetch <url>')
+        await ctx.send('Usage /fetch <url>')
 
 @bot.command()
 async def csv(ctx):

@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def scrape_specific_division(url, class_name1, class_name2,  det): #over1, over2,
+def scrape_specific_division(url, class_name1, class_name2,  det, over1, over2):
     try:
         response = requests.get(url)
 
@@ -11,7 +11,7 @@ def scrape_specific_division(url, class_name1, class_name2,  det): #over1, over2
 
 
 
-
+ 
             soup = BeautifulSoup(response.text, 'html.parser')
         
             first_country = soup.find(class_=class_name1).text
@@ -23,20 +23,30 @@ def scrape_specific_division(url, class_name1, class_name2,  det): #over1, over2
             else:
                 matching = 'No matches at the moment'
 
-   
+            over_counttt = soup.find_all(class_=over1)
+
+
+            over_count2 = over_counttt[0].text
+            over_count1 = over_counttt[1].text
+
+
 
   
-        #     over_count1 = soup.find(class_=over1).text
-        #     over_count2 = soup.find(class_=over2).text
+            # over_count1 = soup.find(class_=over1).text
+            # over_count2 = soup.find(class_=over2).text
 
-        #     if over_count1 :
-        #         prog1 = f'{first_country} - {over_count1}'
-        #     if over_count2:
-        #         prog2 = f'{second_country} - {over_count2}'
+            if over_count1 :
+                prog1 = f'{first_country} - {over_count1}'
 
-        #     else :
-        #         prog1 = ""
-        #         prog2 = ""
+            else :
+                prog1 = ""
+
+
+            if over_count2:
+                prog2 = f'{second_country} - {over_count2}'
+
+            else :
+                prog2 = ""
 
  
             detail = soup.find(class_ = det).text
@@ -59,8 +69,8 @@ def scrape_specific_division(url, class_name1, class_name2,  det): #over1, over2
     
     
     print(matching)
-    # print(prog1)
-    # print(prog2)
+    print(prog1)
+    print(prog2)
     print(ved)
 
 
