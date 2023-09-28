@@ -17,7 +17,7 @@ async def livescore(ctx):
     try:
         url = 'https://www.espncricinfo.com/live-cricket-score'  
         class_name1 = 'ds-text-tight-m ds-font-bold ds-capitalize ds-truncate'
-        class_name2 = 'ds-text-tight-m ds-font-bold ds-capitalize ds-truncate !ds-text-typo-mid3'
+        class_name2 = 'ds-text-tight-m ds-font-bold ds-capitalize ds-truncate'
 
         over1 = "ds-text-compact-s ds-text-typo ds-text-right ds-whitespace-nowrap"
         over2 = "ds-text-compact-s ds-text-typo ds-text-right ds-whitespace-nowrap"

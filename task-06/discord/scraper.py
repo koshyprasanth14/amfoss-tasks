@@ -14,8 +14,16 @@ def scrape_specific_division(url, class_name1, class_name2,  det, over1, over2):
  
             soup = BeautifulSoup(response.text, 'html.parser')
         
-            first_country = soup.find(class_=class_name1).text
-            second_country = soup.find(class_=class_name2).text
+            countries = soup.find_all(class_=class_name1)
+
+            first_country = countries[0].text
+            second_country = countries[1].text
+
+
+
+
+            # first_country = soup.find(class_=class_name1).text
+            # second_country = soup.find(class_=class_name2).text
 
             if first_country and second_country:
             
@@ -31,7 +39,7 @@ def scrape_specific_division(url, class_name1, class_name2,  det, over1, over2):
 
 
 
-  
+   
             # over_count1 = soup.find(class_=over1).text
             # over_count2 = soup.find(class_=over2).text
 
@@ -49,7 +57,9 @@ def scrape_specific_division(url, class_name1, class_name2,  det, over1, over2):
                 prog2 = ""
 
  
-            detail = soup.find(class_ = det).text
+            details = soup.find_all(class_ = det)
+
+            detail = details[0].text
 
             if detail :
                 ved = str(detail)
@@ -67,7 +77,7 @@ def scrape_specific_division(url, class_name1, class_name2,  det, over1, over2):
     
     
     
-    
+    return "\n".join([matching, prog1, prog2, ved])
     print(matching)
     print(prog1)
     print(prog2)

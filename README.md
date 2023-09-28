@@ -24,7 +24,7 @@ to participate in the foss-bios night.
 
 | Tasks list | Description                | Status         |
 |------------|----------------------------|----------------|
-| Task-00    | Install Linux              | Completed      |
+|[Task-00](./task-00)   | Install Linux              | Completed      |
 |[Task-01](./task-01)   | Terminal Wizard            | Completed      |
 | Task-02    | Lessgo Hugo                | Unattempted    |
 |[Task-03](./task-03)   | Hello, World!              | Completed      |
