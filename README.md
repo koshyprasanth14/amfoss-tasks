@@ -31,11 +31,11 @@ to participate in the foss-bios night.
 |[Task-04](./task-04)   | Competitive Programming    | Completed      |
 |[Task-05](./task-05)   | Hypertext Mockup Language  | Completed      |
 |[Task-06](./task-06)   | Cricket Vault              | Completed      |
-| Task-07    | AK-47C                     | Unattempted    |
+|[Task-07](./task-07)   | AK-47C                     | Completed      |
 | Task-08    | Poke-Search!               | Unattempted    |
 | Task-09    | GeoQuest                   | Unattempted    |
 | Task-10    | RuskOS                     | Unattempted    |
-|[Task-11](./task-11)   | TinkerCAD                  | 
+| Task-11    | TinkerCAD                  | Unattempted
 | Task-12    | Godot                      | Unattempted    |
 | Task-13    | Vim                        | Unattempted    |
 |[Task-14](./task-14)   | Bandit                     | Completed      | 
