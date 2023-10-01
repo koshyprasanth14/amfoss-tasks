@@ -26,7 +26,7 @@ to participate in the foss-bios night.
 |------------|----------------------------|----------------|
 |[Task-00](./task-00)   | Install Linux              | Completed      |
 |[Task-01](./task-01)   | Terminal Wizard            | Completed      |
-| Task-02    | Lessgo Hugo                | Unattempted    |
+|[]Task-02](./task-02)  | Lessgo Hugo                | Completed      |
 |[Task-03](./task-03)   | Hello, World!              | Completed      |
 |[Task-04](./task-04)   | Competitive Programming    | Completed      |
 |[Task-05](./task-05)   | Hypertext Mockup Language  | Completed      |

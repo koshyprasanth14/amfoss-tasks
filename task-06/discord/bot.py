@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import scraper
+import csv
 
 
 intents = discord.Intents.default()
@@ -11,6 +12,10 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 live_scores = []
+
+
+bot.remove_command('help')
+
 
 @bot.command() 
 async def livescore(ctx):
@@ -30,24 +35,52 @@ async def livescore(ctx):
         if scraped_data:
             await ctx.send(f'Title: {scraped_data}')
             live_scores.append(scraped_data)
+
+            
+            
+            with open('allscores.csv', mode='a', newline='') as file:
+                
+                file.write(scraped_data + '\n' + '\n')
+            
+
         else:
             await ctx.send('data not found')
 
     except ValueError:
-        await ctx.send('Usage /fetch <url>')
+        await ctx.send('Usage /livescore')
 
 @bot.command()
 async def csv(ctx):
+    
+    
     if live_scores:
+
         await ctx.send("All Live Scores:")
-        for score in live_scores:
-            await ctx.send(f'Title: {score}')
+
+        with open('allscores.csv', 'rb') as file:
+            await ctx.send(file=discord.File(file, 'allscores.csv'))
+    
+    
     else:
+        
         await ctx.send('YOU HAVENT ASKED FOR ANY LIVE SCORES YET.')
 
 @bot.command()
-async def helpp(ctx):
-    await ctx.send("use /livescore to get livescore, /csv for livescores youve asked until now, /help for help with so complicated commands")
+async def help(ctx):
+    await ctx.send('''use /livescore to get livescore 
+/csv for livescores youve asked until now
+/help for help with so complicated commands''')
+
+
+@bot.command()
+async def reset(ctx):
+    try:
+        with open('allscores.csv', 'w', newline='') as file:
+            pass  
+        await ctx.send('CSV file has been reset.')
+    except Exception as e:
+        await ctx.send(f'An error occurred: {str(e)}')
+
 
 
 bot.run('MTE1NDc1NTQwNDYxNDYxMDk0NA.G4XT1U.t2WvlPIVky9-ZZUeqh8QxDCX-JyEuwYWgfVgkc')

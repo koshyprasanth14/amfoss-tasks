@@ -7,14 +7,13 @@
 
 
 body{
-    background: #555;
+    background-color: black;
 }
 
 .card{
     width: 100%;
     max-width: 470px;
-    background-image: "../images/bg.jpg";
-    /* background: linear-gradient(135deg, #00feba, #5b548a); */
+    background-image: url('../images/weather.jpg');
     color: #fff;
     margin: auto 0;
     padding:40px ;
