@@ -1,6 +1,26 @@
-I have made a website for the Rockband inside 'html website'. I used google and youtube to learn html and css. 
-i couldnt call it a really difficult task, but i faced many problems, and my codes were too inefficient. having a lot 
-of images to place was one of the biggest struggles.  I changed the codes a lot, and im sure that theres a lot
-of improvement i have to make.
-Creating this website was a great experience for me. I had to learn html and css from scratch, but yeah i was 
-ready to learn all whatever i hadnt when i applied for this club. 
+For this project, I was tasked with designing a website for a fictional rock band. Although it wasn't for a real band, it allowed me to apply my HTML and CSS skills while learning to overcome various challenges.
+**Tools Used**
+
+        HTML5
+        CSS3
+        Google Search and Tutorials for Learning
+
+# Design Challenges
+
+**Repetitive Code**
+
+One of the primary challenges I encountered was the repetition of code. As I hadn't yet delved into JavaScript, I had to rely heavily on copying and pasting code for similar elements on the website. This made the codebase less efficient and harder to maintain.
+
+**Image Placement**
+
+Another significant hurdle was the proper placement of numerous images. Creating visually appealing layouts while ensuring the images aligned correctly was a time-consuming task.
+
+# Key features
+
+Here are some of the key features I incorporated into the rock band website:
+
+        Responsive Design: Ensured that the website looked great on various devices and screen sizes.
+        Image Galleries: Created visually appealing image galleries for band photos and concert posters.
+
+
+This was a valuable learning experience for me. I honed my HTML and CSS skills, improved my understanding of code efficiency, and gained valuable insights into the challenges of web design.
